@@ -1,0 +1,15 @@
+package com.greatlearning.controller;
+
+import org.springframework.stereotype.controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller//stereotype annotation of @component
+
+public class HelloController {
+	//adding the request mapping-->URL
+	@RequestMapping("/hello")
+	public String giveHelloMassage() {
+		return "hello";
+	}
+
+}
